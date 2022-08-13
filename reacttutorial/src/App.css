@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.navbar
+{
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  padding: 20px;
+}
