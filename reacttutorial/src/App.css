@@ -1,0 +1,32 @@
+.charpara
+{
+ margin-left: 50px;
+}
+
+.chardata
+{
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
+/* .backpreviews
+{
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 100px;
+} */
+.headpre
+{
+    color: rgb(247, 26, 26);
+    padding-top: 20px;
+}
+/* .parapre
+{
+    padding-top: 10px;
+    padding-bottom: 50px;color:white;
+
+} */
+.lowerbutton
+{
+    margin-left: 20px;
+}
