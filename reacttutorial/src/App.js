@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Aleart from './components/Aleart';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 
@@ -28,6 +29,7 @@ function App() {
     <>
 
       <Navbar title="DARK CODERZ-PK" userName="Muhammad Uzair" mode={mode} togglemode={togglemode}></Navbar>
+      <Aleart/>
       {/* <Navbar ></Navbar> */}
 
       <div className="container">
