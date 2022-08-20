@@ -2,11 +2,8 @@ import React from 'react'
 
 function Aleart(props) {
     return (
-            <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>TYPE</strong>MESSAGE
-                <button type="button" className="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+            props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show mt-3`}role="alert">
+                <strong>{props.alert.message} </strong> 
             </div>
     )
 }
