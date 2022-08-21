@@ -5,12 +5,6 @@ import Aleart from './components/Aleart';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 function App() {
   const [mode, setdarkMode] = useState('light');
@@ -52,40 +46,20 @@ function App() {
 
   return (
     <>
-      {/* <Navbar title="DARK CODERZ-PK" userName="Muhammad Uzair" mode={mode} togglemode={togglemode}></Navbar> */}
+      <Navbar title="DARK CODERZ-PK" userName="Muhammad Uzair" mode={mode} togglemode={togglemode}></Navbar>
       {/* <Navbar ></Navbar> */}
 
-      {/* <div className="container">
+      <div className="container">
 
         <Aleart alert={alert}></Aleart>
         <TextForm showAlert={showAlert} head="Enter Text For Operation!" mode={mode}></TextForm>
-      </div> */}
+      </div>
 
-      {/* <div className="container">
+      <div className="container">
         <About></About>
-      </div> */}
+      </div>
 
-      <Router>
 
-        <Switch>
-          {/* ------------------------Start form  ---------------------*/}
-          <Route path="/">
-            <Navbar title="DARK CODERZ-PK" userName="Muhammad Uzair" mode={mode} togglemode={togglemode}></Navbar>
-            <div className="container">
-              <Aleart alert={alert}></Aleart>
-              <TextForm showAlert={showAlert} head="Enter Text For Operation!" mode={mode}></TextForm>
-            </div>
-          </Route>
-          {/* ------------------------about form  ---------------------*/}
-          <Route path="/about">
-            <Navbar title="DARK CODERZ-PK" userName="Muhammad Uzair" mode={mode} togglemode={togglemode}></Navbar>
-            <div className="container">
-              <About></About>
-            </div>
-          </Route>
-          {/* ------------------------End form  ---------------------*/}
-        </Switch>
-      </Router>
 
     </>
 
